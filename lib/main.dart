@@ -1,24 +1,24 @@
-import 'package:diabets/homepage.dart';
 import 'package:flutter/material.dart';
+import 'homepage.dart';
 
 void main() {
-  runApp(Ecommerce());
+  runApp(const Diabets());
 }
 
-class Ecommerce extends StatefulWidget {
-  const Ecommerce({super.key});
+class Diabets extends StatefulWidget {
+  const Diabets({super.key});
 
   @override
-  State<Ecommerce> createState() => _EcommerceState();
+  State<Diabets> createState() => _DiabetsState();
 }
 
-class _EcommerceState extends State<Ecommerce> {
+class _DiabetsState extends State<Diabets> {
  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(
+      home: DashboardPage(
       ),
     );
   }
